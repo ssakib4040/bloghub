@@ -29,7 +29,6 @@ export default function Home(props: any) {
 }
 
 import axios from "axios";
-import { title } from "process";
 
 export async function getStaticProps() {
   const { data } = await axios.get(
