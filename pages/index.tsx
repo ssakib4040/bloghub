@@ -1,5 +1,4 @@
-import Container from "react-bootstrap/Container";
-import { Row } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import { useRouter } from "next/router";
 
 export default function Home(props: any) {

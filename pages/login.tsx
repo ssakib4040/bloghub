@@ -8,7 +8,7 @@ export default function Login() {
       <div className="border p-3" style={{ minWidth: "350px" }}>
         <h1 className="text-center">Login</h1>
         <label htmlFor="Email">Email address</label>
-        <input type="email" name="" id="" className="form-control" />
+        <input type="email" name="" id="" className="form-control mb-3" />
         <label htmlFor="">Password</label>
         <input type="password" className="form-control mb-3" name="" id="" />
         <div className="mb-3">
