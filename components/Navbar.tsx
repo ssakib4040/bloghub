@@ -21,7 +21,7 @@ function NavScrollExample() {
 
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link onClick={() => router.push("/addnew")}>Post</Nav.Link>
+            <Nav.Link onClick={() => router.push("/addnew")}>New Post</Nav.Link>
             <Nav.Link onClick={() => router.push("/about")}>About</Nav.Link>
             <Nav.Link onClick={() => router.push("/contact")}>Contact</Nav.Link>
           </Nav>
