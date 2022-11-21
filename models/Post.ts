@@ -4,12 +4,12 @@ const PostSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: [true, "Please provide a name"],
+      required: true,
     },
 
-    post: {
+    content: {
       type: String,
-      required: [true, "Please provide a password"],
+      required: true,
     },
   },
   { timestamps: true }

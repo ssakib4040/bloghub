@@ -18,12 +18,8 @@ export default function Home(props: any) {
                 router.push("/posts/123");
               }}
             >
-              <h4>Post title number 1</h4>
-              <p className="mb-0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                tempora minus molestias expedita vitae recusandae cum, ad beatae
-                quis delectus!
-              </p>
+              <h4>{post.title}</h4>
+              <p className="mb-0">{post.content}</p>
             </div>
           );
         })}
@@ -33,9 +29,12 @@ export default function Home(props: any) {
 }
 
 import axios from "axios";
+import { title } from "process";
 
 export async function getStaticProps() {
-  const { data } = await axios.get(`${process.env.WEBSITE_URI}/api/posts`);
+  const { data } = await axios.get(
+    `${process.env.WEBSITE_URI}/api/posts/posts`
+  );
 
   return {
     props: {

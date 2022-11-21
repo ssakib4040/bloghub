@@ -28,9 +28,9 @@ export default function Register() {
         password,
       });
 
-      console.log(data);
-
       toast.success("Registration successful");
+      setEmail("");
+      setPassword("");
     } catch (error: any) {
       toast.error(error.response.data);
     }
