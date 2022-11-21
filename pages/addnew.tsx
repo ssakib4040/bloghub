@@ -16,7 +16,7 @@ export default function Addnew() {
       <textarea
         name=""
         id=""
-        cols={10}
+        rows={10}
         className="form-control mb-3"
         placeholder="Enter your post content"
       ></textarea>
