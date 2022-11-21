@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 function NavScrollExample() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="">
+    <Navbar bg="dark" variant="dark" expand="lg" className="" fixed="top">
       <Container className="">
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
 
