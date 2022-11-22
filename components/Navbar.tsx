@@ -4,8 +4,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+// import useUser from "../lib/useUser";
+
 function NavScrollExample() {
   const router = useRouter();
+  // const { user, mutateUser } = useUser();
+
+  // console.log(user);
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="" fixed="top">

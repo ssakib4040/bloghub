@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { Row, Container } from "react-bootstrap";
 import { useRouter } from "next/router";
 
+import Loader from "../components/Loader";
+
 export default function Home(props: any) {
   const [data, setData] = useState<any>([]);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
@@ -11,9 +14,14 @@ export default function Home(props: any) {
       const { data } = await axios.get("/api/posts/posts");
       console.log(data);
       setData(data);
+      setLoading(false);
     }
     fetchData();
   }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <Container className="pt-3">
