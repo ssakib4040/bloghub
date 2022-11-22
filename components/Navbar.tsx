@@ -4,13 +4,21 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-// import useUser from "../lib/useUser";
+import useUser from "../lib/useUser";
 
 function NavScrollExample() {
   const router = useRouter();
-  // const { user, mutateUser } = useUser();
+  const { user, mutateUser } = useUser();
 
   // console.log(user);
+
+  const handleLogout = async () => {
+    await mutateUser(
+      fetch("/api/auth/logout", {
+        method: "POST",
+      })
+    );
+  };
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="" fixed="top">
@@ -31,9 +39,18 @@ function NavScrollExample() {
             <Nav.Link onClick={() => router.push("/contact")}>Contact</Nav.Link>
           </Nav>
 
-          <Button variant="outline-light" onClick={() => router.push("/login")}>
-            Login
-          </Button>
+          {user?.isLoggedIn ? (
+            <Button variant="outline-light" onClick={handleLogout}>
+              Logout
+            </Button>
+          ) : (
+            <Button
+              variant="outline-light"
+              onClick={() => router.push("/login")}
+            >
+              Login
+            </Button>
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>

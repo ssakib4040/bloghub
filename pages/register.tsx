@@ -7,8 +7,8 @@ import { ToastContainer, toast } from "react-toastify";
 import { validateEmail } from "../lib/utils";
 
 export default function Register() {
-  const [email, setEmail] = useState("john@example.com");
-  const [password, setPassword] = useState("12345678");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [errors, setErrors] = useState<any>({});
 
   const handleRegister = async () => {

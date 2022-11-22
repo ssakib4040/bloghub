@@ -12,7 +12,6 @@ export default function Home(props: any) {
   useEffect(() => {
     async function fetchData() {
       const { data } = await axios.get("/api/posts/posts");
-      console.log(data);
       setData(data);
       setLoading(false);
     }
@@ -34,7 +33,7 @@ export default function Home(props: any) {
               key={post._id}
               className="border cursor-pointer p-2 mb-3"
               onClick={() => {
-                router.push("/posts/123");
+                router.push(`/posts/${post._id}`);
               }}
             >
               <h4>{post.title}</h4>
@@ -48,15 +47,3 @@ export default function Home(props: any) {
 }
 
 import axios from "axios";
-
-// export async function getStaticProps() {
-//   const { data } = await axios.get(
-//     `${process.env.WEBSITE_URI}/api/posts/posts`
-//   );
-
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
