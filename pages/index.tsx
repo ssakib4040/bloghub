@@ -1,18 +1,29 @@
+import { useEffect, useState } from "react";
 import { Row, Container } from "react-bootstrap";
 import { useRouter } from "next/router";
 
 export default function Home(props: any) {
+  const [data, setData] = useState<any>([]);
   const router = useRouter();
+
+  useEffect(() => {
+    async function fetchData() {
+      const { data } = await axios.get("/api/posts/posts");
+      console.log(data);
+      setData(data);
+    }
+    fetchData();
+  }, []);
 
   return (
     <Container className="pt-3">
       <Row className="">
         {/* Posts  */}
 
-        {props.data.map((post: any, index: string) => {
+        {data.map((post: any) => {
           return (
             <div
-              key={index}
+              key={post._id}
               className="border cursor-pointer p-2 mb-3"
               onClick={() => {
                 router.push("/posts/123");
@@ -30,14 +41,14 @@ export default function Home(props: any) {
 
 import axios from "axios";
 
-export async function getStaticProps() {
-  const { data } = await axios.get(
-    `${process.env.WEBSITE_URI}/api/posts/posts`
-  );
+// export async function getStaticProps() {
+//   const { data } = await axios.get(
+//     `${process.env.WEBSITE_URI}/api/posts/posts`
+//   );
 
-  return {
-    props: {
-      data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// }
