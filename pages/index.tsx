@@ -12,6 +12,9 @@ export default function Home(props: any) {
   useEffect(() => {
     async function fetchData() {
       const { data } = await axios.get("/api/posts/posts");
+
+      console.log(data);
+
       setData(data);
       setLoading(false);
     }
@@ -41,6 +44,12 @@ export default function Home(props: any) {
             </div>
           );
         })}
+
+        {data.length === 0 && (
+          <div className="p-2 mb-3">
+            <h4>No posts</h4>
+          </div>
+        )}
       </Row>
     </Container>
   );
