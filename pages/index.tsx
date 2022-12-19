@@ -13,8 +13,6 @@ export default function Home(props: any) {
     async function fetchData() {
       const { data } = await axios.get("/api/posts/posts");
 
-      console.log(data);
-
       setData(data);
       setLoading(false);
     }
