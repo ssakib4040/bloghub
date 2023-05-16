@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #ddd;
+}
+
+.dev {
+  /* border: 2px solid red; */
+}
