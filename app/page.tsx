@@ -63,7 +63,7 @@ export default function Home() {
       </div>
 
       {/*  */}
-      <section>
+      <section className="mb-5">
         <div className="flex pt-3 lg:px-16 gap-3 dev">
           {/* left */}
           <div className="w-3/12 dev">
@@ -380,6 +380,175 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="text-gray-600 body-font bg-white">
+        <div className="container px-5 py-24 mx-auto lg:px-16">
+          <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                CATEGORIES
+              </h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    First Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Second Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Third Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Fourth Link
+                  </a>
+                </li>
+              </nav>
+            </div>
+            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                CATEGORIES
+              </h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    First Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Second Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Third Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Fourth Link
+                  </a>
+                </li>
+              </nav>
+            </div>
+            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                CATEGORIES
+              </h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    First Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Second Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Third Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Fourth Link
+                  </a>
+                </li>
+              </nav>
+            </div>
+            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                CATEGORIES
+              </h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    First Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Second Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Third Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Fourth Link
+                  </a>
+                </li>
+              </nav>
+            </div>
+            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                CATEGORIES
+              </h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    First Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Second Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Third Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Fourth Link
+                  </a>
+                </li>
+              </nav>
+            </div>
+            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                CATEGORIES
+              </h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    First Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Second Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Third Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800">
+                    Fourth Link
+                  </a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
